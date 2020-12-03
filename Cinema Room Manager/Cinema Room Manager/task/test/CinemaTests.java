@@ -51,6 +51,8 @@ public class CinemaTests extends StageTest<String> {
             return CheckResult.wrong("You miscalculated the income.\nCorrect one is $648");
         }
 
+        program.stop();
+
         program = new TestedProgram(Cinema.class);
         program.start();
 
@@ -59,6 +61,8 @@ public class CinemaTests extends StageTest<String> {
         if (!output.contains("$560")) {
             return CheckResult.wrong("You miscalculated the income.\nCorrect one is $560");
         }
+
+        program.stop();
 
         program = new TestedProgram(Cinema.class);
         program.start();
@@ -69,6 +73,8 @@ public class CinemaTests extends StageTest<String> {
             return CheckResult.wrong("You miscalculated the income.\nCorrect one is $558");
         }
 
+        program.stop();
+
         program = new TestedProgram(Cinema.class);
         program.start();
 
@@ -78,6 +84,8 @@ public class CinemaTests extends StageTest<String> {
             return CheckResult.wrong("You miscalculated the income.\nCorrect one is $10");
         }
 
+        program.stop();
+
         program = new TestedProgram(Cinema.class);
         program.start();
 
@@ -86,6 +94,8 @@ public class CinemaTests extends StageTest<String> {
         if (!output.contains("$90")) {
             return CheckResult.wrong("You miscalculated the income.\nCorrect one is $90");
         }
+
+        program.stop();
 
         program = new TestedProgram(Cinema.class);
         program.start();
