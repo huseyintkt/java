@@ -3,8 +3,9 @@ package farm;
 public class Chicken {
 
     private String name;
-    static int totalChicken = 0;
+    public static int totalChicken = 0;
 
+    // constructor
     public Chicken(String name){
 
         if(name != null){
