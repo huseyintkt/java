@@ -16,7 +16,7 @@ public class StringOperations {
                 result += i + ", ";
             }
         }
-        System.out.println("Soru 1 :");
+        System.out.println("Soru 2 :");
         System.out.println(result + pUpperLimit);
     }
 
@@ -37,7 +37,22 @@ public class StringOperations {
                 primeNumber.add(i);
             }
         }
-        System.out.println("Soru 2 :");
+        System.out.println("Soru 3 :");
         System.out.println(primeNumber);
+    }
+
+    /*
+    * Bu metod, parametre olarak gonderilen satir sayisi kadar yildiz karakterleri ile ekrana ucgen cizer.
+    * */
+    public static void drawTriangle(int pRow){
+        String result = "";
+        for(int i = 1; i <= pRow; i++){
+            for(int j = 1; j<= i; j++){
+                result += "*";
+            }
+            result += "\n";
+        }
+        System.out.println("Soru 5 :");
+        System.out.println(result);
     }
 }

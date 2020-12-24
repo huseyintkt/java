@@ -28,5 +28,7 @@ public class Main {
         StringOperations.printNumbers(100);
 
         StringOperations.printPrimeNumbers(100);
+
+        StringOperations.drawTriangle(10);
     }
 }
