@@ -27,5 +27,6 @@ public class Main {
 
         StringOperations.printNumbers(100);
 
+        StringOperations.printPrimeNumbers(100);
     }
 }

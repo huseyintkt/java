@@ -19,4 +19,25 @@ public class StringOperations {
         System.out.println("Soru 1 :");
         System.out.println(result + pUpperLimit);
     }
+
+    /*
+     * Bu metod, parametre olarak gonderilen sayiya kadar olan
+     * tum asal sayilari ekrana yazdirir.
+     * */
+    public static void printPrimeNumbers(int pUpperLimit){
+        ArrayList<Integer> primeNumber = new ArrayList<>();
+        for (int i = 2; i <= pUpperLimit; i++){
+            boolean status = true;
+            for (int j = 2; j < i/2; j++){
+                if( i % j == 0){
+                    status = false;
+                }
+            }
+            if(status){
+                primeNumber.add(i);
+            }
+        }
+        System.out.println("Soru 2 :");
+        System.out.println(primeNumber);
+    }
 }
