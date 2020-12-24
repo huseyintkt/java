@@ -25,9 +25,13 @@ import jam101.week05.string.operations.StringOperations;
 public class Main {
     public static void main(String[] args) {
 
+        StringOperations.convertToUppercaseTheFirstLetters("ali veli deli");
+
         StringOperations.printNumbers(100);
 
         StringOperations.printPrimeNumbers(100);
+
+
 
         StringOperations.drawTriangle(10);
     }

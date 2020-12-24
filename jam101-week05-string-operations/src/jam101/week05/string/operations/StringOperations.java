@@ -1,7 +1,28 @@
 package jam101.week05.string.operations;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class StringOperations {
+
+    /*
+     * Bu metod, parametre olarak gonderilen isim ve soyismin ilk harflerini buyuk harfe cevirir ve ekrana yazar.
+     * */
+    public static void convertToUppercaseTheFirstLetters(String pFullName){
+        String[] list = pFullName.split(" ");
+        String fullNameWithUppercase = "";
+
+        for(int i = 0; i < list.length; i++){
+            String firstLetter = String.valueOf(list[i].charAt(0));
+            list[i] = list[i].replace(firstLetter, firstLetter.toUpperCase());
+        }
+
+        for(int i = 0; i < list.length; i++){
+            fullNameWithUppercase += list[i] + " ";
+        }
+
+        System.out.println("Soru 1 :");
+        System.out.println(pFullName + " => " + fullNameWithUppercase.trim());
+    }
 
     /*
     * Bu metod, parametre olarak gonderilen sayiya kadar olan sayilari,
@@ -26,6 +47,7 @@ public class StringOperations {
      * */
     public static void printPrimeNumbers(int pUpperLimit){
         ArrayList<Integer> primeNumber = new ArrayList<>();
+
         for (int i = 2; i <= pUpperLimit; i++){
             boolean status = true;
             for (int j = 2; j < i/2; j++){
@@ -37,6 +59,7 @@ public class StringOperations {
                 primeNumber.add(i);
             }
         }
+
         System.out.println("Soru 3 :");
         System.out.println(primeNumber);
     }
@@ -46,12 +69,14 @@ public class StringOperations {
     * */
     public static void drawTriangle(int pRow){
         String result = "";
+
         for(int i = 1; i <= pRow; i++){
             for(int j = 1; j<= i; j++){
                 result += "*";
             }
             result += "\n";
         }
+
         System.out.println("Soru 5 :");
         System.out.println(result);
     }
