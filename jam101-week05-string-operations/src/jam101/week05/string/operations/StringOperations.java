@@ -1,6 +1,5 @@
 package jam101.week05.string.operations;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class StringOperations {
 
@@ -25,8 +24,7 @@ public class StringOperations {
     }
 
     /*
-    * Bu metod, parametre olarak gonderilen sayiya kadar olan sayilari,
-    * bir satirda 10 sayi ve aralarinda virgul olacak sekilde ekrana yazdirir.
+    * Bu metod, parametre olarak gonderilen sayiya kadar olan sayilari, bir satirda 10 sayi ve aralarinda virgul olacak sekilde ekrana yazdirir.
     * */
     public static void printNumbers(int pUpperLimit){
         String result = "";
@@ -42,8 +40,7 @@ public class StringOperations {
     }
 
     /*
-     * Bu metod, parametre olarak gonderilen sayiya kadar olan
-     * tum asal sayilari ekrana yazdirir.
+     * Bu metod, parametre olarak gonderilen sayiya kadar olan tum asal sayilari ekrana yazdirir.
      * */
     public static void printPrimeNumbers(int pUpperLimit){
         ArrayList<Integer> primeNumber = new ArrayList<>();

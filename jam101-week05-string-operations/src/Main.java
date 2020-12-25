@@ -20,6 +20,7 @@
 *   ******
 * */
 
+import jam101.week05.string.operations.Password;
 import jam101.week05.string.operations.StringOperations;
 
 public class Main {
@@ -31,7 +32,7 @@ public class Main {
 
         StringOperations.printPrimeNumbers(100);
 
-
+        Password.printPasswords(50);
 
         StringOperations.drawTriangle(10);
     }
